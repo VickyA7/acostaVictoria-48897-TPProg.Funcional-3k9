@@ -16,7 +16,7 @@ import lombok.ToString;
 
 public class Empleado {
     private String nombre;
-    private int departamento;
-    private Long salario;
+    private String departamento;
+    private double salario;
     private int edad;
 }

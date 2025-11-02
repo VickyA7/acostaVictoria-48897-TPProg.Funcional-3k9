@@ -8,13 +8,13 @@ import java.util.stream.Collectors;
 public class MainCaso3 {
     public static void main(String[] args) {
         List<Libro> libros= List.of(
-                new Libro("El Quijote", "Cervantes", 12000, 1605),
-                new Libro("Cien años de soledad", "García Márquez", 18000, 1967),
-                new Libro("Rayuela", "Cortázar", 15000, 1963),
-                new Libro("El principito", "Saint-Exupéry", 8000, 1943),
-                new Libro("1984", "Orwell", 9500, 1949),
-                new Libro("Fahrenheit 451", "Bradbury", 10000, 1953),
-                new Libro("El amor en los tiempos del cólera", "García Márquez", 16000, 1985)
+                new Libro("El Quijote", "Cervantes", 12000, 10500),
+                new Libro("Cien años de soledad", "Garcia Marquez", 18000, 19670),
+                new Libro("Rayuela", "Cortazar", 15000, 1963),
+                new Libro("El principito", "Saint-Exupery", 8000, 8430),
+                new Libro("1984", "Orwell", 9500, 9490),
+                new Libro("Fahrenheit 451", "Bradbury", 10000, 19530),
+                new Libro("El amor en los tiempos del colera", "Garcia Marquez", 16000, 15850)
         );
 
 //Ejercicio 1: Listar los títulos de los libros con más de 300 páginas, ordenados alfabéticamente.
@@ -32,7 +32,7 @@ public class MainCaso3 {
                 .max(Comparator.comparingDouble(Libro::getPrecio))
                 .orElse(null);
 
-        System.out.println("\n2) Libro más caro: " + masCaro);
+        System.out.println("\n2) Libro mas caro: " + masCaro);
 
 //Ejercicio 3: Agrupar los libros por autor y contar cuántos libros tiene cada uno.
 
